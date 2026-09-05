@@ -29,6 +29,6 @@ RapidFix Sprint is a tightly scoped, one-day engineering rescue for startups wit
 
 ## Request the sprint
 
-[Open a new intake issue](https://github.com/abhinavrastogi2627/rapidfix-sprint/issues/new?title=RapidFix%20Sprint%20request)
+[Open the structured intake form](https://github.com/abhinavrastogi2627/rapidfix-sprint/issues/new?template=rapidfix.yml)
 
 Include the stack, the failing path, the expected acceptance test, and the deadline. **Do not post credentials, proprietary source, customer data, or other secrets in a public issue.** Repository access can be arranged privately after the scope is agreed.
