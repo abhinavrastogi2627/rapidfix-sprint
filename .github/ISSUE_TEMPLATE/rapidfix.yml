@@ -1,0 +1,46 @@
+name: RapidFix Sprint request
+description: Request a one-day production rescue for a release blocker or critical defect
+title: "[RapidFix] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the request. Do not include credentials, proprietary source, customer data, or other secrets in this public issue.
+  - type: input
+    id: stack
+    attributes:
+      label: Stack
+      description: Languages, frameworks, deployment platform, and CI provider.
+      placeholder: FastAPI, React, Docker, GitHub Actions
+    validations:
+      required: true
+  - type: textarea
+    id: failure
+    attributes:
+      label: What is failing?
+      description: Share the visible error and the smallest safe reproduction. Redact all secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance test
+      description: What exact result would prove the blocker is fixed?
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Deadline and timezone
+      placeholder: 5 Sep 2026, 18:00 UTC
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have not included passwords, tokens, private source, or customer data in this issue.
+          required: true
+        - label: I can arrange repository access privately after scope is agreed.
+          required: true
